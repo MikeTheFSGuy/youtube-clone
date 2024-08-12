@@ -1,0 +1,57 @@
+<div class="flex gap-10 lg:gap-20 justify-between pt-2 mb-6 mx-4">
+    <div [ngClass]="'gap-4 items-center flex-shrink-0 ' + (displayInputFullWidth ? 'hidden md:flex' : 'flex')">
+        <!-- need to include angular's icon library-->
+        <button button class="rounded-full p-2 hover:bg-slate-100">
+            <svg class="h-8 w-8 text-gray-500"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <line x1="3" y1="12" x2="21" y2="12" />  <line x1="3" y1="6" x2="21" y2="6" />  <line x1="3" y1="18" x2="21" y2="18" /></svg>
+        </button>
+        <div class="flex m-auto">
+            <svg height="50px" width="50px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 461.001 461.001" xml:space="preserve" fill="#000000" transform="rotate(0)matrix(1, 0, 0, 1, 0, 0)">
+                <g id="SVGRepo_iconCarrier"> 
+                    <g> <path style="fill:#1375f6;" d="M365.257,67.393H95.744C42.866,67.393,0,110.259,0,163.137v134.728 c0,52.878,42.866,95.744,95.744,95.744h269.513c52.878,0,95.744-42.866,95.744-95.744V163.137 C461.001,110.259,418.135,67.393,365.257,67.393z M300.506,237.056l-126.06,60.123c-3.359,1.602-7.239-0.847-7.239-4.568V168.607 c0-3.774,3.982-6.22,7.348-4.514l126.06,63.881C304.363,229.873,304.298,235.248,300.506,237.056z"></path> </g> 
+                    
+                </g>
+            </svg>
+            <svg class="pt-1" height="40" width="130" xmlns="http://www.w3.org/2000/svg">
+                <text x="5" y="30" fill="none" stroke="#1375f6" font-size="25">CloneTube</text>
+              </svg>
+        </div>
+        
+    </div>
+    <form [ngClass]="'md:flex gap-4 flex-grow justify-center ' + (displayInputFullWidth ? 'flex' : 'hidden md:flex')">
+        <button (click)="displayInputFullWidth=false" class="rounded-full p-2 hover:bg-slate-100 md:hidden" >
+            <svg class="h-8 w-8 text-gray-500"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <line x1="5" y1="12" x2="19" y2="12" />  <line x1="5" y1="12" x2="11" y2="18" />  <line x1="5" y1="12" x2="11" y2="6" /></svg>
+        </button>
+        <div class="flex flex-grow max-w-[600px]">
+            <input class="rounded-l-full border border-slate-300 shadow-inner shadow-slate-300 py-1 px-4 text-lg w-full focus:border-blue-500 outline-none" type="search" placeholder="search">
+            <button class="bg-slate-200 rounded-r-full border border-l-0 border-slate-300 px-4 py-2 flex-shrink-0">
+                <svg class="h-8 w-8 text-gray-500"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <circle cx="10" cy="10" r="7" />  <line x1="21" y1="21" x2="15" y2="15" /></svg>
+            </button>
+        </div>
+        <button class="rounded-full p-2 bg-slate-200 flex-shrink-0" type="button">
+            <svg class="h-8 w-8 text-gray-500"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <rect x="9" y="2" width="6" height="11" rx="3" />  <path d="M5 10a7 7 0 0 0 14 0" />  <line x1="8" y1="21" x2="16" y2="21" />  <line x1="12" y1="17" x2="12" y2="21" /></svg>
+        </button>
+    </form>
+    <div [ngClass]="'flex-shrink-0 md:gap-2 ' + (displayInputFullWidth ? 'hidden md:flex' : 'flex')">
+        <button class="rounded-full p-2 hover:bg-slate-100 md:hidden" (click)="displayInputFullWidth=true">
+            <svg class="h-8 w-8 text-gray-500"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <circle cx="10" cy="10" r="7" />  <line x1="21" y1="21" x2="15" y2="15" /></svg>
+        </button>
+        <button class="rounded-full p-2 hover:bg-slate-100 md:hidden" >
+            <svg class="h-8 w-8 text-gray-500"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <rect x="9" y="2" width="6" height="11" rx="3" />  <path d="M5 10a7 7 0 0 0 14 0" />  <line x1="8" y1="21" x2="16" y2="21" />  <line x1="12" y1="17" x2="12" y2="21" /></svg>
+        </button>
+        <button class="rounded-full p-2 hover:bg-slate-100" >
+            <svg class="h-8 w-8 text-gray-500"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" />  <polyline points="7 9 12 4 17 9" />  <line x1="12" y1="4" x2="12" y2="16" /></svg>
+        </button>
+        <button button class="rounded-full p-2 hover:bg-slate-100">
+            <svg class="h-8 w-8 text-gray-500"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/>
+              </svg>
+              
+        </button>
+        <button button class="rounded-full p-2 hover:bg-slate-100">
+            <svg class="h-8 w-8 text-gray-500"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+              
+        </button>
+    </div>
+</div>
